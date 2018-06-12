@@ -8,10 +8,7 @@ define('DB_PASSWORD','Scientia01!');
 $con = mysql_connect(DB_HOST,DB_USER,DB_PASSWORD) or die("Failed to connect to MySQL: " . mysql_error()); 
 $db = mysql_select_db(DB_NAME,$con) or die("Failed to connect to MySQL: " . mysql_error()); 
 $test = mysql_query('SELECT 1 from `myDB` LIMIT 1');			//run test query to determine if table exists
-
-
-
-					
+			
 function NewUser() { 
 	
 	$firstName = $_POST['firstName']; 
@@ -60,8 +57,6 @@ function NewUser() {
 		echo "Registration is confirmed.";
 		}
 	}
-
-	
 } 
 
 function Register() { 
@@ -76,8 +71,7 @@ function Register() {
 		else{ 
 			echo "You are already registered."; 
 		} 
-	}
-		
+	}	
 }
 
 if($test !== FALSE)				//table exists

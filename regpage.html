@@ -8,50 +8,48 @@
 		}
 	</style>
 	<script  type="text/javascript">
-					
-					 
-			function validate(){		 
-					 
-					 var firstName = document["myform"]["firstName"].value;
-					 var lastName = document["myform"]["lastName"].value;
-					 var addressOne = document["myform"]["addressOne"].value;
-					 var city = document["myform"]["city"].value;
-					 var state = document["myform"]["state"].value;
-					 var pass = document["myform"]["pass"].value;
-					 var cpass = document["myform"]["cpass"].value;
-					 var zip = document["myform"]["zip"].value;
-					 var ziplen = zip.length;
-					 
-					 if (firstName == null || firstName == ""){
-						alert("Please enter your First Name!");
-						return false;
-					  }
-					 else if (lastName == null || lastName == ""){
-						alert("Please enter your Last Name!");
-						return false;
-					  }
-					 else if (addressOne == null || addressOne == ""){
-						alert("Please enter your address!");
-						return false;
-					  }
-					 else if (city == null || city == ""){
-						alert("Please enter a city!");
-						return false;
-					  }
-					 else if (pass == null || pass == ""){
-						alert("Please enter a password!");
-						return false;
-					  }
-					 else if (ziplen < 5 || passlen > 9){
-						alert("Zip Code must be 5 to 9 digits");
-						return false;
-					  }
-					 else if (pass != cpass){
-					   alert("Passwords do not match!");
-					   return false;
-					  }
-
-				}	 
+							 
+		function validate(){		 
+				 
+			 var firstName = document["myform"]["firstName"].value;
+			 var lastName = document["myform"]["lastName"].value;
+			 var addressOne = document["myform"]["addressOne"].value;
+			 var city = document["myform"]["city"].value;
+			 var state = document["myform"]["state"].value;
+			 var pass = document["myform"]["pass"].value;
+			 var cpass = document["myform"]["cpass"].value;
+			 var zip = document["myform"]["zip"].value;
+			 var ziplen = zip.length;
+			 
+			 if (firstName == null || firstName == ""){
+				alert("Please enter your First Name!");
+				return false;
+			  }
+			 else if (lastName == null || lastName == ""){
+				alert("Please enter your Last Name!");
+				return false;
+			  }
+			 else if (addressOne == null || addressOne == ""){
+				alert("Please enter your address!");
+				return false;
+			  }
+			 else if (city == null || city == ""){
+				alert("Please enter a city!");
+				return false;
+			  }
+			 else if (pass == null || pass == ""){
+				alert("Please enter a password!");
+				return false;
+			  }
+			 else if (ziplen < 5 || passlen > 9){
+				alert("Zip Code must be 5 to 9 digits");
+				return false;
+			  }
+			 else if (pass != cpass){
+			   alert("Passwords do not match!");
+			   return false;
+			  }
+		}	 
 		</script>
 </head> 
 
@@ -179,18 +177,12 @@
 					<td><button type="submit">Back</button></td>
 				</form> 
 				</tr>
-
 				
 			</table> 
-			
-			
 
 		</fieldset> 
 	</div> 
 	
-
 </body> 
-
-
 
 </html>
